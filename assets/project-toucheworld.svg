@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">TouchéWorld — camera and hand control concept</title>
+  <desc id="desc">An original conceptual illustration of a camera trajectory and an articulated hand skeleton inside a first-person room. It is not a generated video frame or an experimental result.</desc>
+  <defs>
+    <clipPath id="scene"><rect x="180" y="188" width="570" height="342" rx="12"/></clipPath>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c9dcd6"/><stop offset="1" stop-color="#a9c9c0"/></linearGradient>
+    <linearGradient id="frustum" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#75a7ad" stop-opacity=".42"/><stop offset="1" stop-color="#75a7ad" stop-opacity=".08"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#e4eef1"/>
+  <g font-family="Arial,Helvetica,sans-serif" fill="#203c35">
+    <text x="49" y="75" font-size="14" letter-spacing="2.4">CAMERA + HAND CONTROL</text>
+    <text x="47" y="133" font-size="47" font-weight="600" letter-spacing="-1.8">TOUCHÉWORLD</text>
+    <text x="724" y="75" font-size="15" fill="#668787">01</text>
+  </g>
+
+  <!-- A room seen from an oblique first-person viewpoint. -->
+  <g clip-path="url(#scene)">
+    <rect x="180" y="188" width="570" height="342" fill="#d5e3e6"/>
+    <path d="M180 188 342 239V395L180 530Z" fill="#dce8e7"/>
+    <path d="M750 188 647 239V395L750 530Z" fill="#c7dbd8"/>
+    <path d="M180 530 342 395H647L750 530Z" fill="url(#floor)"/>
+    <path d="M180 188 342 239H647L750 188" fill="#edf3f2"/>
+    <g fill="none" stroke="#8eadaa" stroke-width="1.4" opacity=".7">
+      <path d="M342 239V395H647V239M180 530 342 395M750 530 647 395"/>
+      <path d="M248 530 377 395M350 530 426 395M455 530 478 395M565 530 530 395M673 530 586 395"/>
+      <path d="M228 490H718M279 449H685M321 413H659"/>
+    </g>
+    <path d="M373 265H439V345H373Z" fill="#a8c2c2"/>
+    <path d="M380 272H432V338H380Z" fill="#c1d9da"/>
+    <path d="M440 364H657L691 397H421Z" fill="#f1f5ef"/>
+    <path d="M421 397H691V408H421Z" fill="#a2bdb5"/>
+    <path d="M439 408V458M672 408V458" stroke="#6e9487" stroke-width="8"/>
+    <ellipse cx="581" cy="364" rx="58" ry="11" fill="#6d9485" opacity=".17"/>
+    <path d="M544 297 580 278 615 299 579 320Z" fill="#ecc8a9"/>
+    <path d="M544 297V349L579 371V320Z" fill="#d7925f"/>
+    <path d="M579 320 615 299V349L579 371Z" fill="#bb6d41"/>
+    <path d="M530 281h16m-16 0v16m99-16h-16m16 0v16M530 380h16m-16 0v-16m99 16h-16m16 0v-16" fill="none" stroke="#618e84" stroke-width="2"/>
+  </g>
+
+  <!-- Camera rays and a short navigation path. -->
+  <path d="M147 431 342 248V420Z" fill="url(#frustum)"/>
+  <path d="M147 431 342 248M147 431 342 420M342 248V420" fill="none" stroke="#66939c" stroke-width="2" stroke-dasharray="6 7"/>
+  <path d="M61 503C98 478 147 488 179 502S240 527 286 487" fill="none" stroke="#50868a" stroke-width="2.8" stroke-dasharray="5 7"/>
+  <g fill="#f8faf5" stroke="#50868a" stroke-width="2.2"><circle cx="67" cy="499" r="6"/><circle cx="177" cy="501" r="6"/><circle cx="282" cy="491" r="6"/></g>
+  <g transform="translate(85 397) rotate(-9 48 32)">
+    <path d="M17 9 30 0H61L72 9Z" fill="#3e665f"/>
+    <rect x="0" y="9" width="87" height="58" rx="12" fill="#203f39"/>
+    <path d="M87 26 111 15V61L87 51Z" fill="#507b74"/>
+    <circle cx="44" cy="38" r="18" fill="#b5d3cd"/>
+    <circle cx="44" cy="38" r="11" fill="#426f6a"/>
+    <circle cx="39" cy="33" r="3.5" fill="#e1eeea"/>
+  </g>
+
+  <!-- Five articulated digits. The skeleton is a conceptual control signal. -->
+  <path d="M518 554 492 496 479 461 453 438 434 409 443 400 469 416 487 432 490 382 491 349 502 348 507 380 508 415 527 416 534 370 540 337 551 338 550 375 550 419 569 425 584 386 596 364 606 369 600 395 588 445 611 430 635 402 645 406 635 432 606 469 586 503 574 554Z" fill="#f4f6ec" fill-opacity=".95" stroke="#9ebfb4" stroke-width="2"/>
+  <g fill="none" stroke="#2e6c60" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M547 536 505 484 479 454 458 428 440 405"/>
+    <path d="M547 536 512 463 502 417 498 380 497 351"/>
+    <path d="M547 536 538 458 542 414 545 373 546 340"/>
+    <path d="M547 536 566 466 581 427 593 393 601 367"/>
+    <path d="M547 536 589 487 610 457 630 429 640 405"/>
+  </g>
+  <path d="M505 484 512 463 538 458 566 466 589 487" fill="none" stroke="#5e9181" stroke-width="2.5"/>
+  <g fill="#e1eee4" stroke="#2e6c60" stroke-width="2.4">
+    <circle cx="547" cy="536" r="8"/><circle cx="505" cy="484" r="6"/><circle cx="479" cy="454" r="5.5"/><circle cx="458" cy="428" r="5"/>
+    <circle cx="512" cy="463" r="6"/><circle cx="502" cy="417" r="5.5"/><circle cx="498" cy="380" r="5"/>
+    <circle cx="538" cy="458" r="6"/><circle cx="542" cy="414" r="5.5"/><circle cx="545" cy="373" r="5"/>
+    <circle cx="566" cy="466" r="6"/><circle cx="581" cy="427" r="5.5"/><circle cx="593" cy="393" r="5"/>
+    <circle cx="589" cy="487" r="6"/><circle cx="610" cy="457" r="5.5"/><circle cx="630" cy="429" r="5"/>
+  </g>
+  <g fill="#bd7045"><circle cx="440" cy="405" r="5.5"/><circle cx="497" cy="351" r="5.5"/><circle cx="546" cy="340" r="5.5"/><circle cx="601" cy="367" r="5.5"/><circle cx="640" cy="405" r="5.5"/></g>
+  <text x="49" y="557" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2.1" fill="#4e7476">FIRST-PERSON INTERACTION</text>
+</svg>
