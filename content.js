@@ -60,10 +60,10 @@ window.RESUME_DATA = {
       label: "WORLD MODEL / MULTIMODAL AI",
       summary: "交互式世界模型算法研究，围绕数据采集与标注、相机—手势联合控制、因果生成与蒸馏开展工作。",
       bullets: [
-        "数据采集与验收：对接外包团队，制定交互式世界模型所需的数据采集要求，跟进交付并完成验收。",
         "数据标注与筛选：使用 ViPE、VGGT 完成相机标注，利用 MoGe2 估计深度，并通过重投影一致性筛选样本；使用 WiLoR、HandFlow 提取手部关键点并进行筛选。",
         "相机—手势联合控制：基于 LTX、MiniMax H3 等生成模型，引入相机 LoRA，通过 PRoPE 将相机内参和相对外参融入 DiT 自注意力，实现连续相机轨迹驱动的视角控制；新增手势 LoRA 与条件适配模块，融合骨架视频 VAE 特征和数值动作时序特征，实现与相机协同的连续手部动作控制。",
-        "因果适配与蒸馏：冻结预训练主干与相机 LoRA，训练手势分支构建联合控制教师；通过教师强制因果适配与 Self-Forcing DMD 蒸馏，得到每块四步去噪的因果学生模型。"
+        "因果适配与蒸馏：冻结预训练主干与相机 LoRA，训练手势分支构建联合控制教师；通过教师强制因果适配与 Self-Forcing DMD 蒸馏，得到每块四步去噪的因果学生模型。",
+        "数据采集与验收：对接外包团队，制定交互式世界模型所需的数据采集要求，跟进交付并完成验收。"
       ],
       tags: ["交互式世界模型", "LoRA", "PRoPE", "Self-Forcing", "DMD"]
     },
@@ -232,7 +232,10 @@ window.RESUME_DATA = {
       venue: "CVPR 2027",
       status: "在投",
       authors: [],
-      links: [{ label: "项目主页", url: "https://haoyangjang.github.io/toucheworld/" }],
+      links: [
+        { label: "项目主页", url: "https://haoyangjang.github.io/toucheworld/" },
+        { label: "论文详情", url: "assets/toucheworld-paper-20261104.pdf" }
+      ],
       summary: "基于 LTX-2.5／SolarWM 视频生成模型，在同一 DiT 主干上构建相机 LoRA 与手势 LoRA 双分支适配框架。以初始场景图和文本初始化环境，通过连续相机轨迹与手部动作共同控制后续视频，形成“探索—交互—反馈”的在线生成流程。",
       tags: ["世界模型", "第一视角交互", "DiT", "双分支 LoRA", "Self-Forcing", "DMD 蒸馏"],
       highlights: [

@@ -5,6 +5,7 @@
   if (!container || !papers.length) return;
   const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const safeLinks = links => (links || []).filter(link => {
+    if (/^assets\/[a-z0-9-]+\.pdf$/.test(link.url)) return true;
     try { return ['https:','http:'].includes(new URL(link.url).protocol); } catch { return false; }
   });
   container.innerHTML = papers.map(paper => {
