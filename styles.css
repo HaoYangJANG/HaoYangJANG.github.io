@@ -80,10 +80,10 @@ main{display:flex;flex-direction:column;gap:24px}
 .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:11px;margin-top:27px}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:44px;padding:10px 17px;border:1px solid transparent;border-radius:12px;font-size:14px;line-height:1.5;font-weight:550;white-space:nowrap}
 .button .icon{width:16px;height:16px}
-.button.primary{background:#cfdfd3;color:#20483e;border-color:#a7bfb0}
-.button.primary:hover{background:#c4d7ca}
-.button.secondary{background:#f6f8f3;color:var(--ink);border-color:#b7c9bd}
-.button.secondary:hover{background:#edf3ee}
+.button.primary{background:#b8cdbd;color:#20483e;border-color:#8da894}
+.button.primary:hover{background:#aec5b4}
+.button.secondary{background:#ceded1;color:var(--ink);border-color:#a0b6a6}
+.button.secondary:hover{background:#c4d6c8}
 .button:active{transform:translateY(1px)}
 .hero-directions{margin-top:34px}
 .hero-directions>span,.hero-directions>p,.hero-directions>label{display:block;font-size:13px;line-height:1.7;color:var(--muted);margin-bottom:7px}
@@ -227,8 +227,8 @@ main{display:flex;flex-direction:column;gap:24px}
 .copy-button{display:grid;place-items:center;width:40px;height:40px;padding:0;border:0;border-radius:10px;color:var(--on-dark-muted);background:transparent}
 .copy-button .icon{width:17px;height:17px}
 .copy-button:hover{color:var(--ink);background:var(--sage)}
-.contact-button.button.primary{width:100%;margin-top:27px;background:#35534a;color:var(--on-dark);border-color:#658275}
-.contact-button.button.primary:hover{background:#405f54}
+.contact-button.button.primary{width:100%;margin-top:27px;background:#3e5e52;color:var(--on-dark);border-color:#749083}
+.contact-button.button.primary:hover{background:#496a5d}
 .contact a:focus-visible,.contact button:focus-visible{outline-color:var(--on-dark)}
 .site-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:26px 5px 35px;font-size:13px;line-height:1.7;color:var(--muted)}
 .site-footer>a{display:flex;align-items:center;gap:6px;min-height:40px;color:var(--accent)}
