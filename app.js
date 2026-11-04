@@ -27,8 +27,8 @@
     element.innerHTML = stats[index][0] + '<span>' + stats[index][1] + '</span>';
   });
 
-  document.getElementById('skills-grid').innerHTML = data.skills.map((skill,index) =>
-    '<article class="skill-card"><h3>' + escapeHtml(skill.title) + '</h3><p>' + escapeHtml(skill.description) + '</p>' + tags(skill.tags) + '</article>'
+  document.getElementById('skills-grid').innerHTML = data.skills.map(skill =>
+    '<article class="skill-card"><h3><span class="skill-icon">' + icon(skill.icon) + '</span>' + escapeHtml(skill.title) + '</h3><p>' + escapeHtml(skill.description) + '</p>' + tags(skill.tags) + '</article>'
   ).join('');
   document.getElementById('certificates').innerHTML = data.certificates.map(value => '<span>' + escapeHtml(value) + '</span>').join('');
   document.getElementById('experience-list').innerHTML = data.experiences.map((experience,index) =>
