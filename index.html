@@ -3,110 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#F2EFE8">
+<meta name="theme-color" content="#F5F5F0">
 <meta name="description" content="姜皓扬的个人求职主页。计算机视觉、生成式 AI 与多模态应用。了解个人情况、技能、实习经历、项目和论文。">
 <title>姜皓扬 · AI 算法实习生</title>
-<link rel="icon" href="assets/favicon.svg?v=portfolio-visual-28" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=portfolio-visual-28">
+<link rel="icon" href="assets/favicon.svg?v=natural-5" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=soft-sage-29">
 <script src="content.js?v=documents-27" defer></script>
-<script src="app.js?v=portfolio-visual-28" defer></script>
-<script src="publications.js?v=portfolio-visual-28" defer></script>
+<script src="app.js?v=auto-tour-24" defer></script>
+<script src="publications.js?v=documents-26" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#intro">跳至个人介绍</a>
 <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <symbol id="i-home" viewBox="0 0 24 24">
-      <path d="m3 10.5 9-7 9 7M5 9.2V19a1.5 1.5 0 0 0 1.5 1.5H9v-5.2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5.2h2.5A1.5 1.5 0 0 0 19 19V9.2"/>
-    </symbol>
-    <symbol id="i-code" viewBox="0 0 24 24">
-      <path d="m7.5 8-4 4 4 4m9-8 4 4-4 4m-3-11-3 14"/>
-    </symbol>
-    <symbol id="i-briefcase" viewBox="0 0 24 24">
-      <rect x="3.5" y="7.5" width="17" height="12.5" rx="2.3"/>
-      <path d="M8.5 7.5V5.4A1.4 1.4 0 0 1 9.9 4h4.2a1.4 1.4 0 0 1 1.4 1.4v2.1M3.5 12.3a22 22 0 0 0 17 0M12 12v3"/>
-    </symbol>
-    <symbol id="i-layers" viewBox="0 0 24 24">
-      <path d="m12 3.8 8.5 4.6L12 13 3.5 8.4 12 3.8Zm-8.5 8.4 8.5 4.6 8.5-4.6m-17 3.8 8.5 4.6 8.5-4.6"/>
-    </symbol>
-    <symbol id="i-file" viewBox="0 0 24 24">
-      <path d="M13.5 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9l-5.5-5.5Zm0 0V8a1 1 0 0 0 1 1H19M8.5 12.5h7m-7 3.5h5"/>
-    </symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24">
-      <rect x="3.5" y="5.5" width="17" height="13" rx="2.3"/>
-      <path d="m3.8 8 7.1 5.2a1.8 1.8 0 0 0 2.2 0L20.2 8"/>
-    </symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24">
-      <path d="M6 18 18 6m-8 0h8v8"/>
-    </symbol>
-    <symbol id="i-up" viewBox="0 0 24 24">
-      <path d="M12 19V5m-6 6 6-6 6 6"/>
-    </symbol>
-    <symbol id="i-down" viewBox="0 0 24 24">
-      <path d="M12 3.5v11m-4-4 4 4 4-4M4.5 16v2.5A1.5 1.5 0 0 0 6 20h12a1.5 1.5 0 0 0 1.5-1.5V16"/>
-    </symbol>
-    <symbol id="i-copy" viewBox="0 0 24 24">
-      <rect x="8" y="8" width="12.5" height="12.5" rx="2.2"/>
-      <path d="M16 8V5.7a2.2 2.2 0 0 0-2.2-2.2H5.7a2.2 2.2 0 0 0-2.2 2.2v8.1A2.2 2.2 0 0 0 5.7 16H8"/>
-    </symbol>
-    <symbol id="i-scan" viewBox="0 0 24 24">
-      <path d="M8.5 3.5H6A2.5 2.5 0 0 0 3.5 6v2.5m12-5H18A2.5 2.5 0 0 1 20.5 6v2.5m-17 7V18A2.5 2.5 0 0 0 6 20.5h2.5m12-5V18a2.5 2.5 0 0 1-2.5 2.5h-2.5M3.5 12h17"/>
-      <rect x="8" y="8" width="8" height="8" rx="1.8"/>
-    </symbol>
-    <symbol id="i-sparkles" viewBox="0 0 24 24">
-      <path d="M10 4.5c.9 4.2 1.8 5.1 6 6-4.2.9-5.1 1.8-6 6-.9-4.2-1.8-5.1-6-6 4.2-.9 5.1-1.8 6-6Zm8.2 9.5c.5 2.4 1 2.9 3.4 3.4-2.4.5-2.9 1-3.4 3.4-.5-2.4-1-2.9-3.4-3.4 2.4-.5 2.9-1 3.4-3.4Z"/>
-    </symbol>
-    <symbol id="i-bot" viewBox="0 0 24 24">
-      <rect x="4.5" y="7.5" width="15" height="12" rx="3.8"/>
-      <path d="M12 7.5v-3m-1.5 0h3M2.5 12v3m19-3v3m-12 1.3h5"/>
-      <circle cx="9" cy="12" r=".5"/><circle cx="15" cy="12" r=".5"/>
-    </symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24">
-      <path d="M4.5 6.5h15m-15 5.5h15m-15 5.5h15"/>
-    </symbol>
-    <symbol id="i-plus" viewBox="0 0 24 24">
-      <path d="M12 5.5v13m-6.5-6.5h13"/>
-    </symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24">
-      <path d="M7.5 3.8h-2a1.8 1.8 0 0 0-1.8 1.8c0 8.1 6.6 14.7 14.7 14.7a1.8 1.8 0 0 0 1.8-1.8v-2a1 1 0 0 0-.7-1l-3.6-1.1a1 1 0 0 0-1 .2l-1.5 1.5a11 11 0 0 1-5.5-5.5L9.4 9a1 1 0 0 0 .2-1L8.5 4.5a1 1 0 0 0-1-.7Z"/>
-    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 18"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="3"/><path d="M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3M3 12a22 22 0 0 0 18 0M12 10v5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 6-10 6L2 9Zm-9 11 9 5 9-5M3 18l9 5 9-5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9ZM14 2v7h7M7 13h10M7 17h7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="3"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6ZM6 12v6c4 3 8 3 12 0v-6M22 9v8"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M8 3H4a1 1 0 0 0-1 1v4m13-5h4a1 1 0 0 1 1 1v4M3 16v4a1 1 0 0 0 1 1h4m8 0h4a1 1 0 0 0 1-1v-4"/><rect x="8" y="8" width="8" height="8" rx="2"/><path d="M1 12h22"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5ZM20 2v4m-2-2h4"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="m6 8 4 4-4 4m7 0h5"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="4"/><path d="M12 7V3m-2 0h4M1 12v4m22-4v4M8 12v2m8-2v2m-8 3h8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L20 5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="m5 3 4 1 1 5-3 2c2 3 3 4 6 6l2-3 5 1 1 4c-1 6-10 1-14-3S-2 4 5 3Z"/></symbol>
   </svg>
 <div class="site-shell">
 <header class="site-header" id="site-header">
   <a class="local-time" href="#intro" aria-label="姜皓扬，返回首页"><span class="header-name">姜皓扬</span><span class="header-location">AI · 多模态</span></a>
   <nav class="main-nav" id="main-nav" aria-label="主要导航">
-    <a href="#intro" class="nav-link is-active" aria-current="location"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>首页</a>
-    <a href="#skills" class="nav-link"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>技能</a>
-    <a href="#experience" class="nav-link"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>经历</a>
-    <a href="#projects" class="nav-link"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>项目</a>
-    <a href="#publications" class="nav-link"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>论文</a>
-    <a href="#contact" class="nav-link"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>联系</a>
+    <a href="#intro" class="nav-link is-active" aria-current="location">首页</a><a href="#skills" class="nav-link">技能</a><a href="#experience" class="nav-link">经历</a><a href="#projects" class="nav-link">项目</a><a href="#publications" class="nav-link">论文</a><a href="#contact" class="nav-link">联系</a>
   </nav>
   <div class="header-actions">
-    <a class="icon-button" href="mailto:jhy8636257@163.com" aria-label="发送邮件" title="发送邮件"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
-    <a class="icon-button" href="assets/jiang-haoyang-resume.pdf?v=20261104-2" download="姜皓扬-算法实习.pdf" aria-label="下载简历" title="下载简历"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+    <a class="icon-button" href="mailto:jhy8636257@163.com" aria-label="发送邮件" title="发送邮件"><svg class="icon"><use href="#i-mail"/></svg></a>
+    <a class="icon-button" href="assets/jiang-haoyang-resume.pdf?v=20261104-2" download="姜皓扬-算法实习.pdf" aria-label="下载简历" title="下载简历"><svg class="icon"><use href="#i-down"/></svg></a>
   </div>
-  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="展开导航"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="展开导航"><svg class="icon"><use href="#i-menu"/></svg></button>
 </header>
 <main>
   <section class="hero panel" id="intro" aria-labelledby="hero-heading">
     <div class="hero-intro"><div class="person-row"><img class="portrait" src="assets/portrait.jpg" alt="姜皓扬个人照片" width="90" height="90" fetchpriority="high"><div><h2 data-profile="name">姜皓扬</h2><p data-profile="role">AI 算法实习生</p><span class="availability"><span class="status-dot"></span>正在寻找实习机会</span></div></div>
-    <h1 id="hero-heading">从目标检测到<br><span class="hero-title-accent">视频生成与世界模型。</span></h1>
+    <h1 id="hero-heading">从目标检测到<br>视频生成与世界模型。</h1>
     </div>
     <p class="hero-description">专注交互式世界模型、计算机视觉与多模态生成，探索模型从研究到应用的完整链路。</p>
-    <div class="hero-actions">
-      <a class="button primary" href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>查看代表项目</a>
-      <a class="button secondary" href="#publications"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>论文成果</a>
-      <a class="button secondary" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>联系我</a>
-    </div>
-    <div class="hero-directions">
-      <span>研究方向</span>
-      <div>
-        <a href="#publications"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>交互式世界模型</a>
-        <a href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>视频生成</a>
-        <a href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-bot"/></svg>数字人</a>
-        <a href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg>目标检测</a>
-      </div>
-    </div>
+    <div class="hero-actions"><a class="button primary" href="#projects">查看代表项目<svg class="icon"><use href="#i-arrow"/></svg></a><a class="button secondary" href="#publications">论文成果<svg class="icon"><use href="#i-file"/></svg></a><a class="button secondary" href="#contact">联系我<svg class="icon"><use href="#i-mail"/></svg></a></div>
+    <div class="hero-directions"><span>研究方向</span><div><a href="#publications">交互式世界模型<svg class="icon"><use href="#i-arrow"/></svg></a><a href="#projects">视频生成<svg class="icon"><use href="#i-arrow"/></svg></a><a href="#projects">数字人<svg class="icon"><use href="#i-arrow"/></svg></a><a href="#projects">目标检测<svg class="icon"><use href="#i-arrow"/></svg></a></div></div>
     <aside class="hero-research" aria-labelledby="tour-title">
         <a class="tour-window tour-project-link" href="https://haoyangjang.github.io/toucheworld/" target="_blank" rel="noopener noreferrer" aria-label="TouchéWorld，CVPR 2027 在投，自动预览首页和 Overview，点击打开项目主页（新窗口）">
           <div class="tour-browser-bar"><h3 id="tour-title">TouchéWorld</h3><span class="hero-research-status">CVPR 2027 · 在投</span></div>
@@ -123,41 +74,21 @@
     <h2 id="about-heading">关于我</h2>
     <p class="about-lead"><span>你好，我是姜皓扬。今年 24 岁。</span><br>就读于大连交通大学，计算机科学与技术专业硕士，<br class="desktop-break">2025.08 入学，<span class="education-graduation">预计 2028.05 毕业</span>。<br>本科就读于渤海大学，软件工程专业，2020—2024 年。</p>
     <p class="about-description" id="profile-summary">围绕视频生成模型、世界模型、数字人以及目标检测开展学习与项目实践，也参与过游戏运维运营和软件开发，希望把模型能力带入真实业务场景。</p>
-    <div class="about-links"><a href="mailto:jhy8636257@163.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span data-profile="email">jhy8636257@163.com</span></a><span class="link-divider">·</span><a href="tel:+8613941936257"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-profile="phone">139 4193 6257</span></a><span class="link-divider">·</span><a href="assets/jiang-haoyang-resume.pdf?v=20261104-2" download="姜皓扬-算法实习.pdf"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>下载简历</a></div>
+    <div class="about-links"><a href="mailto:jhy8636257@163.com"><svg class="icon"><use href="#i-mail"/></svg><span data-profile="email">jhy8636257@163.com</span></a><span class="link-divider">·</span><a href="tel:+8613941936257"><svg class="icon"><use href="#i-phone"/></svg><span data-profile="phone">139 4193 6257</span></a><span class="link-divider">·</span><a href="assets/jiang-haoyang-resume.pdf?v=20261104-2" download="姜皓扬-算法实习.pdf"><svg class="icon"><use href="#i-down"/></svg>下载简历</a></div>
     <dl class="profile-numbers"><div><dt>3<span>段</span></dt><dd>工作与实习经历</dd></div><div><dt>4<span>个</span></dt><dd>实践项目</dd></div><div><dt>2<span>项</span></dt><dd>论文与研究成果</dd></div></dl>
   </section>
   <section class="skills panel section-surface" id="skills" aria-labelledby="skills-heading"><div class="section-heading"><h2 id="skills-heading">专业技能</h2><p>从模型设计、训练调优，到部署与工程协作。</p></div><div class="skills-grid" id="skills-grid"></div><div class="certificates"><span class="certificates-label">证书与语言</span><div id="certificates"></div></div></section>
   <section class="experience panel" id="experience" aria-labelledby="experience-heading"><div class="section-heading"><h2 id="experience-heading">实习与工作经历</h2><p>交互式世界模型、数字人算法与游戏运维运营中的实践。</p></div><div class="experience-list" id="experience-list"></div></section>
   <section class="projects panel section-surface" id="projects" aria-labelledby="projects-heading"><div class="section-heading"><h2 id="projects-heading">项目与实践</h2><p>围绕世界模型、数字人生成、目标检测与多模态识别的探索。</p></div><div class="projects-grid" id="projects-grid"></div><p class="project-footnote">点击项目查看技术路线与具体工作。封面为项目概念示意。</p></section>
-  <section class="publications panel" id="publications" aria-labelledby="publications-heading">
-    <div class="section-heading"><h2 id="publications-heading">论文与研究成果</h2><p>交互式世界模型、视觉生成与遥感目标检测。</p></div>
-    <div id="publications-list">
-      <article class="publication-card" id="publication-toucheworld">
-        <div class="publication-topline"><span class="publication-status">CVPR 2027 · 在投</span></div>
-        <h3>TouchéWorld</h3>
-        <p class="publication-subtitle">相机—手势联合控制的第一视角交互式世界模型</p>
-        <p class="publication-summary">基于 LTX-2.5／SolarWM，在同一 DiT 主干上构建相机 LoRA 与手势 LoRA 双分支适配框架，探索连续视角控制与手部交互共同驱动的在线生成。</p>
-        <div class="publication-links">
-          <a class="button secondary" href="https://haoyangjang.github.io/toucheworld/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>项目主页</a>
-          <a class="button primary" href="assets/toucheworld-paper-20261104.pdf" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>论文详情</a>
-        </div>
-      </article>
-      <article class="publication-card">
-        <div class="publication-topline"><span class="publication-status">CCF C · 在投</span></div>
-        <h3>FreqFlow-DETR</h3>
-        <p class="publication-subtitle">融合频域细节增强与边界证据的渐进式流匹配遥感目标检测</p>
-        <p class="publication-summary">以 DiffuDETR 为基础，融合频域细节增强、PDR 与边界证据对齐，通过三步 Flow 更新细化候选框。DIOR-HBB 三模块全开 AP 为 57.4733，APs 为 20.9296。</p>
-      </article>
-    </div>
-  </section>
+  <section class="publications panel" id="publications" aria-labelledby="publications-heading"><div class="section-heading"><h2 id="publications-heading">论文与研究成果</h2><p>交互式世界模型、视觉生成与遥感目标检测。</p></div><div id="publications-list"><article class="publication-card" id="publication-toucheworld"><div class="publication-topline"><span class="publication-status">CVPR 2027 · 在投</span></div><h3>TouchéWorld</h3><p class="publication-subtitle">相机—手势联合控制的第一视角交互式世界模型</p><p class="publication-summary">基于 LTX-2.5／SolarWM，在同一 DiT 主干上构建相机 LoRA 与手势 LoRA 双分支适配框架，探索连续视角控制与手部交互共同驱动的在线生成。</p><div class="publication-links"><a class="button secondary" href="https://haoyangjang.github.io/toucheworld/" target="_blank" rel="noopener noreferrer">项目主页</a><a class="button secondary" href="assets/toucheworld-paper-20261104.pdf" target="_blank" rel="noopener noreferrer">论文详情</a></div></article><article class="publication-card"><div class="publication-topline"><span class="publication-status">CCF C · 在投</span></div><h3>FreqFlow-DETR</h3><p class="publication-subtitle">融合频域细节增强与边界证据的渐进式流匹配遥感目标检测</p><p class="publication-summary">以 DiffuDETR 为基础，融合频域细节增强、PDR 与边界证据对齐，通过三步 Flow 更新细化候选框。DIOR-HBB 三模块全开 AP 为 57.4733，APs 为 20.9296。</p></article></div></section>
   <section class="contact panel section-surface" id="contact" aria-labelledby="contact-heading">
     <div class="section-heading"><h2 id="contact-heading">聊聊下一次机会</h2><p>正在寻找 AI 算法实习机会，欢迎交流岗位、项目与研究想法。</p></div>
-    <div class="contact-inner"><div class="contact-person"><img src="assets/portrait.jpg" width="56" height="56" alt="" loading="lazy"><div><strong data-profile="name">姜皓扬</strong><span>AI Algorithm Intern</span></div><span class="status-dot"></span></div><div class="contact-lines"><div><span>邮箱</span><a href="mailto:jhy8636257@163.com" data-profile="email">jhy8636257@163.com</a><button class="copy-button" data-copy-kind="email" aria-label="复制邮箱"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button></div><div><span>电话</span><a href="tel:+8613941936257" data-profile="phone">139 4193 6257</a><button class="copy-button" data-copy-kind="phone" aria-label="复制电话"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button></div></div><a class="button primary contact-button" href="mailto:jhy8636257@163.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>发送邮件</a></div>
+    <div class="contact-inner"><div class="contact-person"><img src="assets/portrait.jpg" width="56" height="56" alt="" loading="lazy"><div><strong data-profile="name">姜皓扬</strong><span>AI Algorithm Intern</span></div><span class="status-dot"></span></div><div class="contact-lines"><div><span>邮箱</span><a href="mailto:jhy8636257@163.com" data-profile="email">jhy8636257@163.com</a><button class="copy-button" data-copy-kind="email" aria-label="复制邮箱"><svg class="icon"><use href="#i-copy"/></svg></button></div><div><span>电话</span><a href="tel:+8613941936257" data-profile="phone">139 4193 6257</a><button class="copy-button" data-copy-kind="phone" aria-label="复制电话"><svg class="icon"><use href="#i-copy"/></svg></button></div></div><a class="button primary contact-button" href="mailto:jhy8636257@163.com">发送邮件<svg class="icon"><use href="#i-arrow"/></svg></a></div>
   </section>
 </main>
-<footer class="site-footer"><span>© <span data-year>2026</span> Haoyang Jiang.</span><a href="#intro">回到顶部<svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a></footer>
+<footer class="site-footer"><span>© <span data-year>2026</span> Haoyang Jiang.</span><a href="#intro">回到顶部<svg class="icon"><use href="#i-arrow"/></svg></a></footer>
 </div>
-<dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title"><div class="dialog-toolbar"><span>Project Details</span><button class="icon-button dialog-close" aria-label="关闭项目详情"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></div><div id="project-dialog-content"></div></dialog>
+<dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title"><div class="dialog-toolbar"><span>Project Details</span><button class="icon-button dialog-close" aria-label="关闭项目详情"><svg class="icon"><use href="#i-plus"/></svg></button></div><div id="project-dialog-content"></div></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <noscript><p class="noscript-note">你也可以直接<a href="assets/jiang-haoyang-resume.pdf?v=20261104-2" download="姜皓扬-算法实习.pdf">下载 PDF 简历</a>。</p></noscript>
 </body>
